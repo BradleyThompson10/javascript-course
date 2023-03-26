@@ -77,7 +77,7 @@ console.log(ageJonas, ageSarah, averageAge);
 
 
 //Coding Challenge #1
-//Test 1 Variables 
+//Test 1 Variables
 const marksWeightTest1 = 78;
 const marksHeightTest1 = 1.69;
 const JohnsWeightTest1 = 92;
@@ -154,11 +154,10 @@ if (birthYear <= 2000) {
 
 console.log(century);
 
-*/
 
 //Conding Challenge #2
 
-//Variables 
+//Variables
 const marksWeight = 78;
 const marksHeight = 1.69;
 const JohnsWeight = 92;
@@ -175,10 +174,36 @@ if (marksBmi > johnsBmi) {
     console.log(`Johns's BMI ${johnsBmi} is higher than Mark's ${marksBmi}`);
 }
 
-//new line 
 
 
+//Type Conversion
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
 
+console.log(String(23), 23);
+
+//Type Coercion
+console.log('I am ' + 23 + ' years old');
+console.log('I am ' + '23' + ' years old');
+console.log('23' - '10' - 3);
+console.log('23' * '2');
+*/
+
+
+// 5 falsy values 0, '', undefined , null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+
+const money = 0;
+if (money) {
+    console.log("Don't spend it all :)");
+} else {
+    console.log('You should get a job')
+}
 
 
 
