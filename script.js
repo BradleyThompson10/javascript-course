@@ -188,7 +188,7 @@ console.log('I am ' + 23 + ' years old');
 console.log('I am ' + '23' + ' years old');
 console.log('23' - '10' - 3);
 console.log('23' * '2');
-*/
+
 
 
 // 5 falsy values 0, '', undefined , null, NaN
@@ -198,18 +198,41 @@ console.log(Boolean(undefined));
 console.log(Boolean('Jonas'));
 console.log(Boolean({}));
 
-const money = 0;
+const money = 100
+    ;
 if (money) {
     console.log("Don't spend it all :)");
 } else {
     console.log('You should get a job')
 }
 
+let height = 0;
+if (height) {
+    console.log('Height is defined');
+} else {
+    console.log('Height is UNDEFINED');
+}
+*/
 
+const age = '18';
+if (age == 18) console.log('you just became an adult :D loose');
 
+if (age === 18) console.log('you just became an adult :D strict');
 
+const favorite = Number(prompt("what's your favorite number?"));
+console.log(favorite);
 
+if (favorite === 14) {
+    console.log('cool! 14 is a good number')
+} else if (favorite === 7) {
+    console.log('7 is also cool number')
+} else if (favorite === 9) {
+    console.log('9 is also cool number')
+} else {
+    console.log("Number is not 14 or 7")
+}
 
+if (favorite !== 14) console.log('why not 14')
 
 
 
