@@ -212,7 +212,7 @@ if (height) {
 } else {
     console.log('Height is UNDEFINED');
 }
-*/
+
 
 const age = '18';
 if (age == 18) console.log('you just became an adult :D loose');
@@ -233,6 +233,88 @@ if (favorite === 14) {
 }
 
 if (favorite !== 14) console.log('why not 14')
+
+
+
+const hasDriversLicense = true; //A
+const hasGoodVision = true; //B
+
+console.log(hasDriversLicense && hasGoodVision) //AND operator 
+console.log(hasDriversLicense || hasGoodVision) //OR operator
+console.log(!hasDriversLicense)
+
+
+// if (hasDriversLicense && hasGoodVision) {
+//     console.log('Sarah is able to drive!')
+// } else {
+//     console.log('someone else should drive')
+// }
+
+const isTired = false; //C
+console.log(hasDriversLicense || hasGoodVision || isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log('Sarah is able to drive!')
+} else {
+    console.log('someone else should drive')
+}
+
+
+//Coding Challenge #3
+
+//test 1
+
+//variables
+const dolphinesAverageScore = (96 + 108 + 89) / 3
+const koalasAverageScore = (88 + 91 + 110) / 3
+
+console.log(dolphinesAverageScore)
+console.log(koalasAverageScore)
+
+if (dolphinesAverageScore === koalasAverageScore) {
+    console.log(`It's a tie`);
+} else if (dolphinesAverageScore > koalasAverageScore) {
+    console.log('Dolphines Win!')
+} else {
+    console.log('Koalas Win!')
+}
+
+//test 2
+
+//variables
+const dolphinesAverageScore = 103
+const koalasAverageScore = 109
+//103
+//109
+
+if (dolphinesAverageScore === koalasAverageScore) {
+    console.log(`It's a tie`);
+} else if ((dolphinesAverageScore > koalasAverageScore) && (dolphinesAverageScore >= 100)) {
+    console.log('Dolphines Win!');
+} else if ((koalasAverageScore > dolphinesAverageScore) && (koalasAverageScore >= 100)) {
+    console.log('Koalas Win!')
+}
+
+*/
+
+//Test 3
+
+//variables
+const dolphinesAverageScore = 103
+const koalasAverageScore = 103
+
+
+if ((dolphinesAverageScore === koalasAverageScore) && (dolphinesAverageScore > 100) && (koalasAverageScore > 100)) {
+    console.log(`It's a tie`);
+} else if ((dolphinesAverageScore > koalasAverageScore) && (dolphinesAverageScore > 100)) {
+    console.log('Dolphines Win!');
+} else if ((koalasAverageScore > dolphinesAverageScore) && (koalasAverageScore > 100)) {
+    console.log('Koalas Win!')
+} else {
+    console.log('nobody Wins')
+}
+
+
 
 
 
