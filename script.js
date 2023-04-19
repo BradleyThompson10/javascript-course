@@ -239,7 +239,7 @@ if (favorite !== 14) console.log('why not 14')
 const hasDriversLicense = true; //A
 const hasGoodVision = true; //B
 
-console.log(hasDriversLicense && hasGoodVision) //AND operator 
+console.log(hasDriversLicense && hasGoodVision) //AND operator
 console.log(hasDriversLicense || hasGoodVision) //OR operator
 console.log(!hasDriversLicense)
 
@@ -312,7 +312,7 @@ if ((dolphinesAverageScore === koalasAverageScore) && (dolphinesAverageScore > 1
     console.log('nobody Wins')
 }
 
-*/
+
 
 const day = 'monday';
 
@@ -355,11 +355,66 @@ if (day === 'monday') {
 
 
 
+//expressions
+3 + 4
+1996
+true && false && !false
+
+//statements
+if (23 > 10) {
+    const str = '23 is bigger';
+}
+
+
+console.log(`I'm ${2037 - 1991} years old`) //this works because it has an expression in it
+console.log(`I'm ${2037 - 1991} years old` ${ if(23 > 10) {  //this won't because it has a statement in it, JS expects an expression
+    const str = '23 is bigger';
+})
 
 
 
+const age = 23;
+// age >= 18 ? console.log('I like to drink wine') :
+//     console.log('I like to drink water')
 
+const drink = age >= 18 ? 'wine' : 'water'
+console.log(drink);
 
+let drink2;
+if (age >= 18) {
+    drink2 = 'wine';
+} else {
+    drink2 = 'water';
+}
 
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
 
+*/
 
+//Coding Challenge #4
+
+//if else version
+// const bill = 275;
+// let tip;
+
+// const tip = bill >= 50 && <= 300 '0.15' :
+
+// if ((bill >= 50) && (bill <= 300)) {
+//     tip = bill * 0.15;
+// } else if ((bill < 50) || (bill > 300)) {
+//     tip = bill * 0.20;
+// }
+
+// let totalCost = bill + tip;
+
+// console.log(`the Bill was ${bill}, the tip was ${tip}, Total Cost is ${totalCost}`);
+
+//Ternary operator version. 
+const bill = 275;
+let tip;
+
+(bill >= 50) && (bill <= 300) ? tip = bill * 0.15 : tip = bill * 0.20
+
+let totalCost = bill + tip;
+
+console.log(`the Bill was ${bill}, the tip was ${tip}, Total Cost is ${totalCost}`);
